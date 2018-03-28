@@ -10,6 +10,7 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
+import javax.persistence.OneToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.PrePersist;
 import javax.persistence.PreUpdate;
@@ -42,6 +43,9 @@ public class User{
 	@Transient
 	@Size(min=1,max=255)
 	private String confirm;
+
+
+
 
 	// Member variables and annotations go here.
 	
@@ -140,5 +144,17 @@ public class User{
 	 */
 	public void setConfirm(String confirm) {
 		this.confirm = confirm;
+	}
+		/**
+	 * @return the rings
+	 */
+	public List<Char> getChars() {
+		return chars;
+	}
+	/**
+	 * @param chars the chars to set
+	 */
+	public void setChars(List<Char> chars) {
+		this.chars = chars;
 	}
 }

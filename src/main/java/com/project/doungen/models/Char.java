@@ -3,6 +3,7 @@ package com.project.doungen.models;
 import java.util.Date;
 import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
@@ -11,6 +12,7 @@ import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.PrePersist;
 import javax.persistence.PreUpdate;
@@ -29,6 +31,9 @@ public class Char{
 	@Size(min=1,max=255,message="CharName must be between 1-255 characters.")
 	
 	private String name;
+
+	@OneToOne(mappedBy="char", cascade=CascadeType.ALL, fetch=FetchType.LAZY)
+    private Stat stat;
 
 
 	@ManyToOne(fetch = FetchType.LAZY)
