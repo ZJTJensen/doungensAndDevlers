@@ -39,5 +39,9 @@ public class CharController{
 			return "redirect:/dashboard";
 		}
 	}
+	@PostMapping("/stat")
+	public String register(@Valid HttpSession s, BindingResult result){
+		return "statAjax";
+	}
 
 }

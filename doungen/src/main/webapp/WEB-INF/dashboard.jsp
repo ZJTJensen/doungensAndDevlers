@@ -32,8 +32,14 @@
 					<form:errors path="level"></form:errors>
 				</form:label>
 				<form:input value ="1" id="level" min ="1" max="100" path="level" type="number"/>
-				<p>Total Stat Points: <span id="points"></span></p>
-
+				<div id="ajaxPlaceholder">
+					<p>Strength:     ~</p>
+					<p>Constitution: ~</p>
+					<p>Dexterity:    ~</p>
+					<p>Willpower:    ~</p>
+					<p>Intelligence: ~</p>
+					<p>Charisma:     ~</p>
+				</div>
 
 				<input type="submit" value="Build!"/>
 			</form:form>
