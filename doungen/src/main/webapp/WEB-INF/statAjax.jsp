@@ -1,20 +1,56 @@
-<!-- <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<%@taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
-<%@taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
-<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+<p id="points"></p>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<title>Index</title>
-		<link rel="stylesheet" type="text/css" href="/css/style.css">	
-		<script src="/js/main.js"></script>
-	</head>
+<p>
+	<span class='minus'>-</span>
+	<form:input value="0" min="0" class="stat" type="number" path="strength" readonly/>
+	<span class='plus'>+</span>
+</p>
+<p>
+	<span class='minus'>-</span>
+	<form:input value="0" min="0" class="stat" type="number" path="constitution" readonly/>
+	<span class='plus'>+</span>
+</p>
+<p>
+	<span class='minus'>-</span>
+	<form:input value="0" min="0" class="stat" type="number" path="dexterity" readonly/>
+	<span class='plus'>+</span>
+</p>
+<p>
+	<span class='minus'>-</span>
+	<form:input value="0" min="0" class="stat" type="number" path="willpower" readonly/>
+	<span class='plus'>+</span>
+</p>
+<p>
+	<span class='minus'>-</span>
+	<form:input value="0" min="0" class="stat" type="number" path="intelligence" readonly/>
+	<span class='plus'>+</span>
+</p>
+<p>
+	<span class='minus'>-</span>
+	<form:input value="0" min="0" class="stat" type="number" path="charisma" readonly/>
+	<span class='plus'>+</span>
+</p>
 
-	<body>
-		
-	</body>
-</html> -->
+<p>
+	<form:input value="10" min="10" id="health" type="number" path="health" readonly/>
+	<form:input value="10" min="10" id="mana" type="number" path="mana" readonly/>
+</p>
+
+<script>
+	
+		var level = document.getElementById('level').value
+		var points = level * 10;
+		document.getElementById("points").innerHTML = points;
+		$('.plus').click(function(){
+			if(points > 0){
+				points -=1;
+				$(this).parent('.stat').value += 1;
+			}
+		});
+		$('.minus').click(function(){
+			if($(this).parent('.stat').value > 0){
+				points +=1;
+				$(this).parent('.stat').value -= 1;
+			}
+		});
+</script>

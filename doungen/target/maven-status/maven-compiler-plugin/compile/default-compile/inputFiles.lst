@@ -1,7 +1,13 @@
 C:\Users\Zach\Desktop\personal\doungen\doungen\src\main\java\com\project\doungen\models\User.java
-C:\Users\Zach\Desktop\personal\doungen\doungen\src\main\java\com\project\doungen\controllers\Router.java
+C:\Users\Zach\Desktop\personal\doungen\doungen\src\main\java\com\project\doungen\repositories\CharRepository.java
 C:\Users\Zach\Desktop\personal\doungen\doungen\src\main\java\com\project\doungen\validators\UserValidator.java
 C:\Users\Zach\Desktop\personal\doungen\doungen\src\main\java\com\project\doungen\doungenApplication.java
+C:\Users\Zach\Desktop\personal\doungen\doungen\src\main\java\com\project\doungen\models\Char.java
 C:\Users\Zach\Desktop\personal\doungen\doungen\src\main\java\com\project\doungen\services\UserService.java
+C:\Users\Zach\Desktop\personal\doungen\doungen\src\main\java\com\project\doungen\services\CharService.java
 C:\Users\Zach\Desktop\personal\doungen\doungen\src\main\java\com\project\doungen\repositories\UserRepository.java
 C:\Users\Zach\Desktop\personal\doungen\doungen\src\main\java\com\project\doungen\controllers\UserController.java
+C:\Users\Zach\Desktop\personal\doungen\doungen\src\main\java\com\project\doungen\models\Stat.java
+C:\Users\Zach\Desktop\personal\doungen\doungen\src\main\java\com\project\doungen\controllers\CharController.java
+C:\Users\Zach\Desktop\personal\doungen\doungen\src\main\java\com\project\doungen\controllers\Router.java
+C:\Users\Zach\Desktop\personal\doungen\doungen\src\main\java\com\project\doungen\services\StatService.java
